@@ -1,0 +1,76 @@
+.tracker {
+    font-weight: bold;
+    border-top: 1px solid #e5e5e5;
+    height: 62px;
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tracker:nth-last-child(-n+1){
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.tracker-name {
+    width: 200px;
+    display: flex;
+    text-align: left;
+    padding-left: 21px;
+
+}
+.tracker-name span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.tracker-time {
+    margin-left: 100px;
+}
+.tracker-controls-btn:nth-child(1){
+    margin-right: 10px;
+}
+
+.tracker-controls-btn:nth-child(1):hover,
+.remove:hover
+{
+    cursor: pointer;
+}
+
+
+.remove {
+    margin-right: 7px;
+    background-color: #d2697a;
+    mask: url('./icons/remove_circle_outline-24px.svg') no-repeat center / cover;
+    -webkit-mask: url('./icons/remove_circle_outline-24px.svg') no-repeat center;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+
+}
+
+.play {
+    background-color: #fdfdf6;
+    color: #3faf6c;
+}
+
+.stop {
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 564px){
+    .tracker {
+        width: 100%;
+    }
+
+    .tracker-name {
+        width: 130px;
+    }
+
+    .tracker-time {
+        margin-left: 0;
+    }
+
+}

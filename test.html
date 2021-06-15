@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="btn">Click</button>
+
+<script>
+    const button  = document.querySelector('#btn');
+
+    const promise = new Promise( (resolve, reject)=>{
+     button.addEventListener('click' , function() {
+         console.log(this)
+         setTimeout(() => {
+             resolve('foo');
+         }, 3000);
+     })
+    })
+
+
+
+   async function f() {
+      try {
+          const a = await promise;
+          console.log('dsfdf')
+          console.log(a)
+      }catch (e) {
+        console.log( 'error', e)
+      }
+    }
+f();
+</script>
+</body>
+</html>

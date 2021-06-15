@@ -1,0 +1,49 @@
+.add-tracker {
+    display: flex;
+    width: 540px;
+    margin-top: 15px;
+    height: 45px;
+    border-radius: 45px;
+    border: 1px solid #7f7f7f;
+    align-items: center;
+}
+.add-tracker-input {
+    padding-left: 21px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    border-radius: 45px;
+
+}
+
+.add-tracker-btn {
+    background-color: #3faf6c;
+    mask: url('img/ico/play_circle_filled-24px.svg') no-repeat center / contain;
+    -webkit-mask: url('img/ico/play_circle_filled-24px.svg') no-repeat center;
+    width: 45px;
+    height: 45px;
+    mask-size: 118% 118%;
+    margin-right: 2px;
+    padding: 1px;
+}
+.add-tracker-input::placeholder {
+    color: #bbbbbb
+}
+
+
+.add-tracker-btn:hover {
+    transition: 10ms;
+    cursor: pointer;
+    background-color: #207643;
+}
+
+@media screen and (max-width: 564px){
+    .add-tracker {
+        width: calc(100% - 24px);
+        padding-left: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

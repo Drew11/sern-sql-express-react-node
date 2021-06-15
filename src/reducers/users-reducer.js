@@ -1,0 +1,1 @@
+import {LOADING_COMPLETE} from '../constants/index';function usersReducer(state = [], action) {    switch (action.type) {    case LOADING_COMPLETE:        return [...state, ...action.payload];    default:        return state;    }}export default usersReducer;

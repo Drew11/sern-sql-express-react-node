@@ -1,0 +1,48 @@
+.ReactModal__Content {
+  hr {
+    margin-bottom: 5px;
+  }
+  input {
+    outline: none;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+    &:invalid{
+      border: 1px solid palevioletred;
+    }
+    &:valid{
+      border: none;
+    }
+  }
+
+  > button {
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    float: right;
+    background: lightgray;
+    &:hover {
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+  div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+     button {
+      align-self: center;
+      margin-top: 10px;
+      outline: none;
+      border: none;
+      background: darkseagreen;
+      color: white;
+      width: 100px;
+      border-radius: 3px;
+      &:hover {
+        background: lightgreen;
+        cursor: pointer;
+      }
+    }
+  }
+}
