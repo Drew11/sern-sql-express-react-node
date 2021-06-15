@@ -63,10 +63,10 @@ const Statistic = ()=>{
         }
     }, []);
 
-    // useEffect(() => {
-    //     dispatch(fetchData(paginationOptions.usersPerPage, paginationOptions.currentPage));
-    //     setChildPath(null);
-    // }, [paginationOptions.currentPage]);
+    useEffect(() => {
+        dispatch(fetchData(paginationOptions.usersPerPage, paginationOptions.currentPage));
+        setChildPath(null);
+    }, [paginationOptions.currentPage]);
 
     // useEffect(()=>{
     //     if(childPath !== location.pathname && childPath !== null) {
